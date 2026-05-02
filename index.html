@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunny Sites | Web Design for Local Business</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <span class="logo-sun">☀</span>
+        Sunny Sites
+      </div>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact" class="nav-cta">Start a Project</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-tag">Web Design for Local Business</div>
+        <h1>Your Business.<br>Our <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span></h1>
+        <p>We build fast, modern, beautiful websites for locally owned businesses — tailored to your story, your customers, and your goals. No templates. No shortcuts. Just results.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn">Start Your Project</a>
+          <a href="#work" class="btn btn-ghost">See Our Work</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Client Focused</span>
+          </div>
+          <div class="hero-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num">48hr</span>
+            <span class="stat-label">Demo Turnaround</span>
+          </div>
+          <div class="hero-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num">$0</span>
+            <span class="stat-label">Upfront Cost</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card card-1">
+          <div class="card-dot green"></div>
+          <span>Live in 48 hours</span>
+        </div>
+        <div class="floating-card card-2">
+          <div class="card-dot blue"></div>
+          <span>Mobile Optimized</span>
+        </div>
+        <div class="floating-card card-3">
+          <div class="card-dot yellow"></div>
+          <span>SEO Ready</span>
+        </div>
+        <div class="hero-mockup">
+          <div class="mockup-bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mockup-content">
+            <div class="mockup-nav"></div>
+            <div class="mockup-hero"></div>
+            <div class="mockup-cards">
+              <div></div><div></div><div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <span>Barbershops</span>
+        <span>✦</span>
+        <span>Restaurants</span>
+        <span>✦</span>
+        <span>Contractors</span>
+        <span>✦</span>
+        <span>Retail Shops</span>
+        <span>✦</span>
+        <span>Salons</span>
+        <span>✦</span>
+        <span>Gyms</span>
+        <span>✦</span>
+        <span>Cafes</span>
+        <span>✦</span>
+        <span>Local Services</span>
+        <span>✦</span>
+        <span>Barbershops</span>
+        <span>✦</span>
+        <span>Restaurants</span>
+        <span>✦</span>
+        <span>Contractors</span>
+        <span>✦</span>
+        <span>Retail Shops</span>
+        <span>✦</span>
+        <span>Salons</span>
+        <span>✦</span>
+        <span>Gyms</span>
+        <span>✦</span>
+        <span>Cafes</span>
+        <span>✦</span>
+        <span>Local Services</span>
+        <span>✦</span>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <section id="work">
+      <div class="section-header">
+        <span class="section-label">Our Work</span>
+        <h2>Built for Real Businesses</h2>
+        <p>Every site is designed from scratch around your specific industry, customers, and goals.</p>
+      </div>
+      <div class="work-grid">
+
+        <div class="work-card" data-tilt>
+          <div class="work-image" style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d);">
+            <div class="work-preview">
+              <div class="wp-nav"></div>
+              <div class="wp-hero" style="background: #c9a84c22;"></div>
+              <div class="wp-content"></div>
+            </div>
+            <div class="work-overlay">
+              <a href="https://barbershop-template-green.vercel.app" target="_blank" class="work-link">View Live Site →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Barbershop</span>
+            <h3>Fresh Cuts</h3>
+            <p>Premium barbershop with online booking, services menu, and client testimonials.</p>
+          </div>
+        </div>
+
+        <div class="work-card" data-tilt>
+          <div class="work-image" style="background: linear-gradient(135deg, #1a0f05, #2d1a0a);">
+            <div class="work-preview">
+              <div class="wp-nav"></div>
+              <div class="wp-hero" style="background: #c8a97e22;"></div>
+              <div class="wp-content"></div>
+            </div>
+            <div class="work-overlay">
+              <a href="https://restaurant-template-five-iota.vercel.app" target="_blank" class="work-link">View Live Site →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Restaurant</span>
+            <h3>Bella Vita</h3>
+            <p>Fine Italian dining with filterable menu, gallery, and reservation system.</p>
+          </div>
+        </div>
+
+        <div class="work-card" data-tilt>
+          <div class="work-image" style="background: linear-gradient(135deg, #0d1b2a, #1a3a5c);">
+            <div class="work-preview">
+              <div class="wp-nav"></div>
+              <div class="wp-hero" style="background: #e8a02022;"></div>
+              <div class="wp-content"></div>
+            </div>
+            <div class="work-overlay">
+              <a href="https://contractor-template-ochre.vercel.app/" target="_blank" class="work-link">View Live Site →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Contractor</span>
+            <h3>Iron Ridge</h3>
+            <p>Licensed contractor site with project showcase, credentials, and quote form.</p>
+          </div>
+        </div>
+
+        <div class="work-card" data-tilt>
+          <div class="work-image" style="background: linear-gradient(135deg, #faf9f7, #f0ede8);">
+            <div class="work-preview">
+              <div class="wp-nav" style="background: #e8e4df;"></div>
+              <div class="wp-hero" style="background: #b8956a22;"></div>
+              <div class="wp-content"></div>
+            </div>
+            <div class="work-overlay">
+              <a href="https://retail-template-eight.vercel.app/" target="_blank" class="work-link">View Live Site →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Retail</span>
+            <h3>Maison Boutique</h3>
+            <p>Elegant retail boutique with product grid, collections, and newsletter signup.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="services-container">
+        <div class="services-left">
+          <span class="section-label">What We Offer</span>
+          <h2>Everything Your Business Needs Online</h2>
+          <p>From your first demo to a live custom domain — we handle everything so you can focus on running your business.</p>
+          <a href="#contact" class="btn">Get a Free Demo</a>
+        </div>
+        <div class="services-right">
+
+          <div class="service-item">
+            <div class="service-num">01</div>
+            <div class="service-content">
+              <h3>Custom Website Design</h3>
+              <p>A unique site built around your brand, industry, and customers. No generic templates — everything is designed for you.</p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-num">02</div>
+            <div class="service-content">
+              <h3>Free Demo First</h3>
+              <p>See your site before you pay a cent. We build a working demo tailored to your business and present it to you with no commitment.</p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-num">03</div>
+            <div class="service-content">
+              <h3>Mobile Optimized</h3>
+              <p>Over 60% of web traffic is on mobile. Every site we build looks and works perfectly on any screen size.</p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-num">04</div>
+            <div class="service-content">
+              <h3>Hosting & Maintenance</h3>
+              <p>We keep your site live, fast, and up to date. Monthly plans available so you never have to think about the technical side.</p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-num">05</div>
+            <div class="service-content">
+              <h3>SEO Foundation</h3>
+              <p>Every site is built with search engine best practices so local customers can find you on Google.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="section-header">
+        <span class="section-label">How It Works</span>
+        <h2>Simple. Transparent. Yours.</h2>
+        <p>We built our process around one thing — making this as easy as possible for you.</p>
+      </div>
+      <div class="process-steps">
+
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-icon">🤝</div>
+          <h3>We Find You</h3>
+          <p>We reach out to local businesses we believe could benefit from a strong online presence. No pressure, just a conversation.</p>
+        </div>
+
+        <div class="process-arrow">→</div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-icon">⚡</div>
+          <h3>Free Demo in 48hrs</h3>
+          <p>We build a fully working demo site for your business — no cost, no commitment. You see it before you decide anything.</p>
+        </div>
+
+        <div class="process-arrow">→</div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-icon">✏️</div>
+          <h3>You Give Feedback</h3>
+          <p>Tell us what you love and what you want changed. We refine everything until it's exactly right for your business.</p>
+        </div>
+
+        <div class="process-arrow">→</div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-icon">🚀</div>
+          <h3>We Launch</h3>
+          <p>Your site goes live on your own domain. We handle everything — hosting, setup, and ongoing support if you need it.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why">
+      <div class="why-container">
+        <div class="why-text">
+          <span class="section-label">Why Sunny Sites</span>
+          <h2>We're Not an Agency.<br>We're Your Partner.</h2>
+          <p>Big agencies treat you like a ticket number. We treat you like a neighbor — because you are one. We work exclusively with local businesses and we're invested in your success the same way you are.</p>
+          <p>When your business grows, we grow. That's the only model that makes sense to us.</p>
+          <div class="why-points">
+            <div class="why-point">
+              <span>✓</span>
+              <p>Direct communication — no middlemen, no account managers</p>
+            </div>
+            <div class="why-point">
+              <span>✓</span>
+              <p>You see the demo before you spend a single dollar</p>
+            </div>
+            <div class="why-point">
+              <span>✓</span>
+              <p>Flat pricing, no hidden fees, no surprises</p>
+            </div>
+            <div class="why-point">
+              <span>✓</span>
+              <p>We're local — we understand your market and your customers</p>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual">
+          <div class="why-card">
+            <div class="why-card-header">
+              <span class="why-card-icon">☀</span>
+              <span>Sunny Sites</span>
+            </div>
+            <div class="why-card-stat">
+              <span class="big-num">48h</span>
+              <span>From contact to demo</span>
+            </div>
+            <div class="why-card-stat">
+              <span class="big-num">$0</span>
+              <span>Cost to see your demo</span>
+            </div>
+            <div class="why-card-stat">
+              <span class="big-num">∞</span>
+              <span>Revisions until you're happy</span>
+            </div>
+            <a href="#contact" class="btn" style="width:100%; text-align:center; margin-top: 10px;">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2>Let's Build Something Great</h2>
+        <p>Tell us about your business and we'll have a demo ready for you within 48 hours.</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <span>📍</span>
+            <div>
+              <h4>Based In</h4>
+              <p>South Florida</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span>📧</span>
+            <div>
+              <h4>Email</h4>
+              <p>hello@sunnysites.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span>⚡</span>
+            <div>
+              <h4>Response Time</h4>
+              <p>Within 24 hours</p>
+            </div>
+          </div>
+          <div class="contact-promise">
+            <h3>Our Promise</h3>
+            <p>You'll see a working demo of your new website within 48 hours of our first conversation. No cost. No commitment. Just results.</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="John Smith" />
+            </div>
+            <div class="form-group">
+              <label>Business Name</label>
+              <input type="text" placeholder="Smith's Barbershop" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="john@yourbusiness.com" />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="(305) 555-0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Type of Business</label>
+            <select>
+              <option value="">Select your industry</option>
+              <option>Barbershop / Salon</option>
+              <option>Restaurant / Cafe</option>
+              <option>Contractor / Handyman</option>
+              <option>Retail Shop</option>
+              <option>Gym / Fitness</option>
+              <option>Other Local Business</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell us about your business</label>
+            <textarea placeholder="What does your business do? Do you have an existing website? What's most important to you in a new site?"></textarea>
+          </div>
+          <button type="submit" class="btn" style="width:100%;">Send Message — We'll Reply Within 24hrs</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>☀</span> Sunny Sites</div>
+          <p>Web design for local businesses across South Florida. Built with care, delivered with speed.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sunny Sites. All rights reserved.</p>
+        <p>Designed & Built by Sunny Sites</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script>
+      // Progress bar
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / docHeight) * 100;
+        document.getElementById('progressBar').style.width = progress + '%';
+      });
+
+      // Custom cursor
+      const cursor = document.getElementById('cursor');
+      const follower = document.getElementById('cursorFollower');
+      let mouseX = 0, mouseY = 0;
+      let followerX = 0, followerY = 0;
+
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursor.style.left = mouseX + 'px';
+        cursor.style.top = mouseY + 'px';
+      });
+
+      function animateFollower() {
+        followerX += (mouseX - followerX) * 0.1;
+        followerY += (mouseY - followerY) * 0.1;
+        follower.style.left = followerX + 'px';
+        follower.style.top = followerY + 'px';
+        requestAnimationFrame(animateFollower);
+      }
+      animateFollower();
+
+      document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursor.classList.add('cursor-hover');
+          follower.classList.add('follower-hover');
+        });
+        el.addEventListener('mouseleave', () => {
+          cursor.classList.remove('cursor-hover');
+          follower.classList.remove('follower-hover');
+        });
+      });
+
+      // Typed text
+      const words = ['Priority.', 'Story.', 'Vision.', 'Success.'];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const typedEl = document.getElementById('typedText');
+
+      function type() {
+        const current = words[wordIndex];
+        if (isDeleting) {
+          typedEl.textContent = current.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typedEl.textContent = current.substring(0, charIndex + 1);
+          charIndex++;
+        }
+        if (!isDeleting && charIndex === current.length) {
+          setTimeout(() => isDeleting = true, 1800);
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+        setTimeout(type, isDeleting ? 60 : 100);
+      }
+      type();
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+
+      // Scroll animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.add('fade-in');
+        observer.observe(section);
+      });
+
+      // Tilt effect
+      document.querySelectorAll('[data-tilt]').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = ((y - centerY) / centerY) * -8;
+          const rotateY = ((x - centerX) / centerX) * 8;
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+        });
+      });
+
+      // Back to top
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('show', window.scrollY > 400);
+      });
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Navbar scroll effect
+      window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    </script>
+
+  </body>
+</html>
