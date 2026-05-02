@@ -379,7 +379,7 @@
             <span>📧</span>
             <div>
               <h4>Email</h4>
-              <p>hello@sunnysites.com</p>
+              <p>gosunnysites@gmail.com</p>
             </div>
           </div>
           <div class="contact-info-item">
@@ -394,7 +394,7 @@
             <p>You'll see a working demo of your new website within 48 hours of our first conversation. No cost. No commitment. Just results.</p>
           </div>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
           <div class="form-row">
             <div class="form-group">
               <label>Your Name</label>
@@ -579,6 +579,44 @@
           navbar.classList.add('scrolled');
         } else {
           navbar.classList.remove('scrolled');
+        }
+      });
+
+      // Contact form submission
+      document.getElementById('contactForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = e.target.querySelector('button[type="submit"]');
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+
+        const data = {
+            name: e.target.querySelector('input[type="text"]').value,
+            business: e.target.querySelectorAll('input[type="text"]')[1].value,
+            email: e.target.querySelector('input[type="email"]').value,
+            phone: e.target.querySelector('input[type="tel"]').value,
+            industry: e.target.querySelector('select').value,
+            message: e.target.querySelector('textarea').value
+        };
+
+        try {
+            const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+            });
+
+            if (res.ok) {
+                btn.textContent = '✓ Message Sent!';
+                btn.style.backgroundColor = '#4ade80';
+                btn.style.borderColor = '#4ade80';
+                e.target.reset();
+            } else {
+                btn.textContent = 'Something went wrong. Try again.';
+                btn.disabled = false;
+            }
+        } catch (err) {
+            btn.textContent = 'Something went wrong. Try again.';
+            btn.disabled = false;
         }
       });
     </script>
